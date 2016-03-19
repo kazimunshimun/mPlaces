@@ -13,6 +13,7 @@
 		84C5B1301C929532001261BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C5B12E1C929532001261BF /* Main.storyboard */; };
 		84C5B1321C929532001261BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C5B1311C929532001261BF /* Assets.xcassets */; };
 		84C5B1351C929532001261BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C5B1331C929532001261BF /* LaunchScreen.storyboard */; };
+		84C5B13D1C929DB4001261BF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C5B13C1C929DB4001261BF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		84C5B1311C929532001261BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C5B1341C929532001261BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84C5B1361C929532001261BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C5B13C1C929DB4001261BF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,15 +35,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C5B13D1C929DB4001261BF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8410F89C1C99D336006AB895 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		84C5B1191C929532001261BF = {
 			isa = PBXGroup;
 			children = (
+				84C5B13C1C929DB4001261BF /* MapKit.framework */,
 				84C5B1241C929532001261BF /* mPlaces */,
 				84C5B1231C929532001261BF /* Products */,
 			);
@@ -74,6 +85,7 @@
 		84C5B1251C929532001261BF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8410F89C1C99D336006AB895 /* images */,
 				84C5B1261C929532001261BF /* main.m */,
 			);
 			name = "Supporting Files";
@@ -298,6 +310,7 @@
 				84C5B13B1C929532001261BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

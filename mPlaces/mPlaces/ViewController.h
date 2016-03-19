@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#include <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *listMapSegmentedControl;
+@property (weak, nonatomic) IBOutlet UITableView *placesTableView;
+@property (weak, nonatomic) IBOutlet MKMapView *placesMapView;
 
 @end
 
