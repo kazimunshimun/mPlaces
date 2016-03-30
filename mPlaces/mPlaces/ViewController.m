@@ -22,7 +22,7 @@
     self.placesTableView.backgroundView = [self emptyViewForTableView];
     self.placesTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
-    [self.view addSubview:[self stickHeaderView]];
+ //   [self.view addSubview:[self stickHeaderView]];
 }
 
 -(UIView*)emptyViewForTableView{
@@ -73,11 +73,11 @@
 }
 
 - (IBAction)addPlacesTouched:(id)sender {
-    
+    NSLog(@"add places touched");
 }
 
 - (IBAction)profileTouched:(id)sender {
-    
+    NSLog(@"profile touched");
 }
 
 - (IBAction)listMapSegmentedControlValueChanged:(id)sender {
