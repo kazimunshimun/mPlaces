@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UIFont *font = [UIFont fontWithName:@"TrebuchetMS" size:17.0];
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitleTextAttributes:@{NSFontAttributeName:font} forState:UIControlStateNormal];
+    
     return YES;
 }
 

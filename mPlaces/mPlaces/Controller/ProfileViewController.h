@@ -9,5 +9,7 @@
 #import "ViewController.h"
 
 @interface ProfileViewController : ViewController
+@property (weak, nonatomic) IBOutlet UIButton *friendsButton;
+@property (weak, nonatomic) IBOutlet UIButton *placesButton;
 
 @end
