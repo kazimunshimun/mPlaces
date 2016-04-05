@@ -14,8 +14,9 @@
 		84C5B1321C929532001261BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C5B1311C929532001261BF /* Assets.xcassets */; };
 		84C5B1351C929532001261BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C5B1331C929532001261BF /* LaunchScreen.storyboard */; };
 		84C5B13D1C929DB4001261BF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C5B13C1C929DB4001261BF /* MapKit.framework */; };
-		CD4ACAE61CAD22A90024EDA2 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4ACAE51CAD22A90024EDA2 /* ProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
-		CD4ACAE91CAD22BB0024EDA2 /* AddPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4ACAE81CAD22BB0024EDA2 /* AddPlacesViewController.m */; settings = {ASSET_TAGS = (); }; };
+		84EE10431CAFA9880074ADA7 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EE10421CAFA9880074ADA7 /* SettingsTableViewController.m */; };
+		CD4ACAE61CAD22A90024EDA2 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4ACAE51CAD22A90024EDA2 /* ProfileViewController.m */; };
+		CD4ACAE91CAD22BB0024EDA2 /* AddPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4ACAE81CAD22BB0024EDA2 /* AddPlacesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		84C5B1341C929532001261BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84C5B1361C929532001261BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C5B13C1C929DB4001261BF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84EE10411CAFA9880074ADA7 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		84EE10421CAFA9880074ADA7 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		CD4ACAE41CAD22A90024EDA2 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		CD4ACAE51CAD22A90024EDA2 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		CD4ACAE71CAD22BB0024EDA2 /* AddPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPlacesViewController.h; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 				CD4ACAE51CAD22A90024EDA2 /* ProfileViewController.m */,
 				CD4ACAE71CAD22BB0024EDA2 /* AddPlacesViewController.h */,
 				CD4ACAE81CAD22BB0024EDA2 /* AddPlacesViewController.m */,
+				84EE10411CAFA9880074ADA7 /* SettingsTableViewController.h */,
+				84EE10421CAFA9880074ADA7 /* SettingsTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EE10431CAFA9880074ADA7 /* SettingsTableViewController.m in Sources */,
 				CD4ACAE91CAD22BB0024EDA2 /* AddPlacesViewController.m in Sources */,
 				84C5B12D1C929532001261BF /* ViewController.m in Sources */,
 				84C5B12A1C929532001261BF /* AppDelegate.m in Sources */,

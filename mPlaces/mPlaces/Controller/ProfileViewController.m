@@ -7,6 +7,7 @@
 //
 
 #import "ProfileViewController.h"
+#import "SettingsTableViewController.h"
 
 @interface ProfileViewController ()
 
@@ -64,8 +65,14 @@
 
 -(void) rightBarButtonForProfile{
     UIImage *settingsImage = [UIImage imageNamed:@"settings"];
-    UIBarButtonItem *profileSettings = [[UIBarButtonItem alloc] initWithImage:settingsImage style:UIBarButtonItemStylePlain target:nil action:nil];
+    UIBarButtonItem *profileSettings = [[UIBarButtonItem alloc] initWithImage:settingsImage style:UIBarButtonItemStylePlain target:self action:@selector(settingsButtonTouched)];
     self.navigationItem.rightBarButtonItem = profileSettings;
+}
+
+-(void) settingsButtonTouched{
+    SettingsTableViewController *settingsVC = [self.storyboard instantiateViewControllerWithIdentifier:@"settingsViewControllerID"];
+    [self.navigationController showViewController:settingsVC sender:nil];
+    
 }
 
 #pragma mark - button touched action
