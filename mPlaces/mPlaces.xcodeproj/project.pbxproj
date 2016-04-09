@@ -10,6 +10,7 @@
 		843179B31CB929A700A9D7AD /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 843179B21CB929A700A9D7AD /* Review.m */; };
 		843179B61CB92A6C00A9D7AD /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 843179B51CB92A6C00A9D7AD /* Profile.m */; };
 		843179B91CB92ADD00A9D7AD /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 843179B81CB92ADD00A9D7AD /* Message.m */; };
+		843179BC1CB9434200A9D7AD /* HCSStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843179BB1CB9434200A9D7AD /* HCSStarRatingView.m */; };
 		84C5B1271C929532001261BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5B1261C929532001261BF /* main.m */; };
 		84C5B12A1C929532001261BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5B1291C929532001261BF /* AppDelegate.m */; };
 		84C5B12D1C929532001261BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5B12C1C929532001261BF /* ViewController.m */; };
@@ -30,6 +31,8 @@
 		843179B51CB92A6C00A9D7AD /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
 		843179B71CB92ADD00A9D7AD /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		843179B81CB92ADD00A9D7AD /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		843179BA1CB9434200A9D7AD /* HCSStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCSStarRatingView.h; path = mPlaces/Views/HCSStarRatingView.h; sourceTree = SOURCE_ROOT; };
+		843179BB1CB9434200A9D7AD /* HCSStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCSStarRatingView.m; path = mPlaces/Views/HCSStarRatingView.m; sourceTree = SOURCE_ROOT; };
 		84C5B1221C929532001261BF /* mPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C5B1261C929532001261BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84C5B1281C929532001261BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 		CD4ACAED1CAD23A20024EDA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				843179BA1CB9434200A9D7AD /* HCSStarRatingView.h */,
+				843179BB1CB9434200A9D7AD /* HCSStarRatingView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				843179B31CB929A700A9D7AD /* Review.m in Sources */,
 				843179B91CB92ADD00A9D7AD /* Message.m in Sources */,
 				CD4ACAE61CAD22A90024EDA2 /* ProfileViewController.m in Sources */,
+				843179BC1CB9434200A9D7AD /* HCSStarRatingView.m in Sources */,
 				84C5B1271C929532001261BF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

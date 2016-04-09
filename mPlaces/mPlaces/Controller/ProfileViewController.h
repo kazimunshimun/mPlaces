@@ -6,9 +6,9 @@
 //  Copyright © 2016 Anik. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface ProfileViewController : ViewController
+@interface ProfileViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *friendsButton;
 @property (weak, nonatomic) IBOutlet UIButton *placesButton;
 

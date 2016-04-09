@@ -316,7 +316,7 @@
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="addPlacesTouched:" destination="BYZ-38-t0r" id="dch-TH-34l"/>
-                                <segue destination="3ba-wm-6hT" kind="show" id="tSp-lQ-3Ab"/>
+                                <segue destination="o6W-rU-EPC" kind="presentation" id="Ec7-DX-uwJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -342,20 +342,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pkv-92-aPJ">
-                                <rect key="frame" x="20" y="102" width="560" height="30"/>
-                                <color key="textColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XSn-HF-XgZ">
-                                <rect key="frame" x="20" y="140" width="560" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pkv-92-aPJ">
+                                <rect key="frame" x="20" y="72" width="560" height="30"/>
+                                <color key="tintColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zHy-pu-2f5"/>
+                                </constraints>
                                 <color key="textColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUy-nM-Csu">
-                                <rect key="frame" x="20" y="178" width="560" height="100"/>
+                                <rect key="frame" x="20" y="168" width="560" height="100"/>
                                 <subviews>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="O45-ES-Qjy">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="100"/>
@@ -370,58 +368,116 @@
                                     <constraint firstItem="O45-ES-Qjy" firstAttribute="top" secondItem="DUy-nM-Csu" secondAttribute="top" id="htd-ij-aCR"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bN-MT-HdY">
-                                <rect key="frame" x="20" y="286" width="41.5" height="20"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ija-iJ-5lh">
-                                <rect key="frame" x="20" y="314" width="41.5" height="20"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5f-UH-thm">
-                                <rect key="frame" x="250" y="343" width="100" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="ZYF-5N-wtq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                <state key="normal" title="Add place">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kzt-7b-V9d" customClass="HCSStarRatingView">
+                                <rect key="frame" x="20" y="276" width="240" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </button>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Review/Comment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mE3-KS-COW">
+                                <rect key="frame" x="20" y="328" width="560" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oXg-3P-NQZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jLP-L1-CWH">
+                                <rect key="frame" x="20" y="110" width="560" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mg0-MS-QKE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="Ija-iJ-5lh" secondAttribute="leading" id="2dh-x5-2Lm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="jLP-L1-CWH" secondAttribute="leading" id="0Zm-V1-Luo"/>
+                            <constraint firstItem="mE3-KS-COW" firstAttribute="top" secondItem="Kzt-7b-V9d" secondAttribute="bottom" constant="8" id="5c4-gW-yg8"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Pkv-92-aPJ" secondAttribute="leading" id="8dA-Gm-JeN"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="XSn-HF-XgZ" secondAttribute="leading" id="E05-Jb-lmo"/>
-                            <constraint firstItem="Ija-iJ-5lh" firstAttribute="top" secondItem="6bN-MT-HdY" secondAttribute="bottom" constant="8" id="E0y-ll-Kfg"/>
-                            <constraint firstItem="c5f-UH-thm" firstAttribute="top" secondItem="Ija-iJ-5lh" secondAttribute="bottom" constant="9" id="GSW-Vm-Tvw"/>
-                            <constraint firstItem="DUy-nM-Csu" firstAttribute="top" secondItem="XSn-HF-XgZ" secondAttribute="bottom" constant="8" id="ILK-Wx-3ty"/>
-                            <constraint firstItem="6bN-MT-HdY" firstAttribute="top" secondItem="DUy-nM-Csu" secondAttribute="bottom" constant="8" id="Kha-4o-zrC"/>
-                            <constraint firstItem="c5f-UH-thm" firstAttribute="centerX" secondItem="sML-mr-GFz" secondAttribute="centerX" id="L6P-oM-Zew"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="6bN-MT-HdY" secondAttribute="leading" id="NUd-lc-Oez"/>
+                            <constraint firstItem="DUy-nM-Csu" firstAttribute="top" secondItem="jLP-L1-CWH" secondAttribute="bottom" constant="8" id="BGX-CC-bK2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mE3-KS-COW" secondAttribute="trailing" id="CJz-Jp-ol7"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Kzt-7b-V9d" secondAttribute="leading" id="Ib1-Am-LG0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jLP-L1-CWH" secondAttribute="trailing" id="JZi-W3-eWO"/>
+                            <constraint firstItem="jLP-L1-CWH" firstAttribute="top" secondItem="Pkv-92-aPJ" secondAttribute="bottom" constant="8" id="LPP-zo-zin"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mE3-KS-COW" secondAttribute="leading" id="N61-Qk-ZDz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kzt-7b-V9d" secondAttribute="trailing" id="TCH-cv-b4E"/>
                             <constraint firstAttribute="leadingMargin" secondItem="DUy-nM-Csu" secondAttribute="leading" id="YxK-O8-Wj8"/>
-                            <constraint firstItem="XSn-HF-XgZ" firstAttribute="top" secondItem="Pkv-92-aPJ" secondAttribute="bottom" constant="8" id="dgq-aC-KJ0"/>
+                            <constraint firstItem="Kzt-7b-V9d" firstAttribute="top" secondItem="O45-ES-Qjy" secondAttribute="bottom" constant="8" id="cpT-fm-awI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DUy-nM-Csu" secondAttribute="trailing" id="eiU-34-f0h"/>
                             <constraint firstItem="Pkv-92-aPJ" firstAttribute="top" secondItem="tlJ-Gh-s4S" secondAttribute="bottom" constant="8" id="iJb-T2-a7L"/>
+                            <constraint firstItem="Kzt-7b-V9d" firstAttribute="top" secondItem="DUy-nM-Csu" secondAttribute="bottom" constant="8" id="lE3-6r-WIq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Pkv-92-aPJ" secondAttribute="trailing" id="mhs-Sm-lde"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="XSn-HF-XgZ" secondAttribute="trailing" id="yam-SX-AUk"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TCH-cv-b4E"/>
+                                <exclude reference="cpT-fm-awI"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="sdX-nT-bNL">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="Q5M-px-VBf">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="closeButtonTouched:" destination="3ba-wm-6hT" id="q86-HK-uFZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="4SM-Yf-zfT">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="doneButtonTouched:" destination="3ba-wm-6hT" id="OXY-d2-zdY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="commentView" destination="mE3-KS-COW" id="gOB-9w-Xle"/>
+                        <outlet property="doneButton" destination="4SM-Yf-zfT" id="5hj-eC-0By"/>
+                        <outlet property="mapView" destination="O45-ES-Qjy" id="XjS-cU-ri3"/>
+                        <outlet property="placeDescriptionTextView" destination="jLP-L1-CWH" id="kIj-1s-RbM"/>
+                        <outlet property="placeNameTextField" destination="Pkv-92-aPJ" id="fWP-xr-zcY"/>
+                        <outlet property="rateView" destination="Kzt-7b-V9d" id="waY-Wa-zPR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YfB-xP-JZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="991" y="352"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UEg-7S-aUK">
+            <objects>
+                <navigationController id="o6W-rU-EPC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LCX-C2-G2z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3ba-wm-6hT" kind="relationship" relationship="rootViewController" id="7Iy-Df-bby"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGr-xM-DGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="211" y="352"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eBN-ge-j6U">
