@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843179B31CB929A700A9D7AD /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 843179B21CB929A700A9D7AD /* Review.m */; };
+		843179B61CB92A6C00A9D7AD /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 843179B51CB92A6C00A9D7AD /* Profile.m */; };
+		843179B91CB92ADD00A9D7AD /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 843179B81CB92ADD00A9D7AD /* Message.m */; };
 		84C5B1271C929532001261BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5B1261C929532001261BF /* main.m */; };
 		84C5B12A1C929532001261BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5B1291C929532001261BF /* AppDelegate.m */; };
 		84C5B12D1C929532001261BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5B12C1C929532001261BF /* ViewController.m */; };
@@ -14,12 +17,19 @@
 		84C5B1321C929532001261BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C5B1311C929532001261BF /* Assets.xcassets */; };
 		84C5B1351C929532001261BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C5B1331C929532001261BF /* LaunchScreen.storyboard */; };
 		84C5B13D1C929DB4001261BF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C5B13C1C929DB4001261BF /* MapKit.framework */; };
+		84EDDCAD1CB8EFBA0019CF36 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDDCAC1CB8EFBA0019CF36 /* Place.m */; };
 		84EE10431CAFA9880074ADA7 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EE10421CAFA9880074ADA7 /* SettingsTableViewController.m */; };
 		CD4ACAE61CAD22A90024EDA2 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4ACAE51CAD22A90024EDA2 /* ProfileViewController.m */; };
 		CD4ACAE91CAD22BB0024EDA2 /* AddPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4ACAE81CAD22BB0024EDA2 /* AddPlacesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		843179B11CB929A700A9D7AD /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
+		843179B21CB929A700A9D7AD /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
+		843179B41CB92A6C00A9D7AD /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		843179B51CB92A6C00A9D7AD /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		843179B71CB92ADD00A9D7AD /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		843179B81CB92ADD00A9D7AD /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		84C5B1221C929532001261BF /* mPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C5B1261C929532001261BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84C5B1281C929532001261BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,6 +41,8 @@
 		84C5B1341C929532001261BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84C5B1361C929532001261BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C5B13C1C929DB4001261BF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84EDDCAB1CB8EFBA0019CF36 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		84EDDCAC1CB8EFBA0019CF36 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
 		84EE10411CAFA9880074ADA7 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		84EE10421CAFA9880074ADA7 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		CD4ACAE41CAD22A90024EDA2 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -121,6 +133,14 @@
 		CD4ACAEA1CAD23A20024EDA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84EDDCAB1CB8EFBA0019CF36 /* Place.h */,
+				84EDDCAC1CB8EFBA0019CF36 /* Place.m */,
+				843179B11CB929A700A9D7AD /* Review.h */,
+				843179B21CB929A700A9D7AD /* Review.m */,
+				843179B41CB92A6C00A9D7AD /* Profile.h */,
+				843179B51CB92A6C00A9D7AD /* Profile.m */,
+				843179B71CB92ADD00A9D7AD /* Message.h */,
+				843179B81CB92ADD00A9D7AD /* Message.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,8 +238,12 @@
 			files = (
 				84EE10431CAFA9880074ADA7 /* SettingsTableViewController.m in Sources */,
 				CD4ACAE91CAD22BB0024EDA2 /* AddPlacesViewController.m in Sources */,
+				84EDDCAD1CB8EFBA0019CF36 /* Place.m in Sources */,
+				843179B61CB92A6C00A9D7AD /* Profile.m in Sources */,
 				84C5B12D1C929532001261BF /* ViewController.m in Sources */,
 				84C5B12A1C929532001261BF /* AppDelegate.m in Sources */,
+				843179B31CB929A700A9D7AD /* Review.m in Sources */,
+				843179B91CB92ADD00A9D7AD /* Message.m in Sources */,
 				CD4ACAE61CAD22A90024EDA2 /* ProfileViewController.m in Sources */,
 				84C5B1271C929532001261BF /* main.m in Sources */,
 			);
