@@ -23,6 +23,7 @@
                                         [UIColor whiteColor], NSForegroundColorAttributeName,
                                         nil] 
                               forState:UIControlStateNormal];
+    self.placeNameTextField.layer.sublayerTransform = CATransform3DMakeTranslation(4, 0, 0);
 }
 
 - (void)didReceiveMemoryWarning {
